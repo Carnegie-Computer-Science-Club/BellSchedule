@@ -1,0 +1,25 @@
+To change or add schedules, edit BellSchedules.txt. Use NotePad or WordPad, or save from Word as Text file.
+
+The first line provides the start hour and minute and stop hour and minute for taking official daily attendance.
+
+(You no longer have to specify the number of schedules in the file. The number will be set by counting the schedules as they are read from the file. The maximum number is 20.)
+
+The next line must have the word schedule, followed by the name that will be displayed on the button.
+
+The next lines are events.  The format is hour (0-24), minute, event name. Leave a space between each number and before the event name.  Spaces are allowed in the event name.  The events must be in increasing order of time.
+
+The last event must be 24 00 end of day so that the calendar changes to the next day.  After the 24 00 end of day record, there is another record starting with "schedule", and the events follow that.
+
+The program uses the first schedule by default.
+
+Programming note: to create the jar file:
+          jar cfe0 BellTimer.jar BellTimer *.class
+This command creates a java archive called BellTimer.jar, with main method located in BellTimer class, using all the files in the directory with extension "class". The 0 (zero is an option to skip compression so that it will start faster (no decompression needed.)
+
+Deployment: put the following items into c:\Program Files\BellTimer
+   BellTimer.jar
+   BellSchedules.txt
+   HowToChange.txt (this document)
+   BellTimer.bat
+Put a shortcut on the desktop pointing to the BellTimer.bat file. When you run the bat file, it will have a command window displaying the schedule. The command window will close when the BellTimer window closes.  If there is an error when building the schedules, the command window will remain open. Schedules and events are printed as they are created, so the error will be found in the line following the lines printed.
+

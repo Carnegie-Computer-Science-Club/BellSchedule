@@ -1,0 +1,17 @@
+schedule text
+08 30 Start of 1st Per.
+09 30 End of 1st Per.
+09 35 Start of 2nd Per.
+10 20 End of 2nd Per.
+10 25 Start of 3th Per.
+11 10 End of 3th Per.
+11 15 Start of 4th Per.
+12 00 End of 4th Per.
+13 15 End of Lunch
+13 20 Start of 5th Per.
+14 05 End of 5th Per.
+14 10 Start of 6th Per.
+14 55 End of 6th Per.
+15 00 Start of 7th Per.
+15 45 End of 7th Per.
+24 00 End of the day
